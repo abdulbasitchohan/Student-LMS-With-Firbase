@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="email" placeholder="Enter Email Address" id="email" value="burger-admin@admin.com">
+    <input type="password" placeholder="Enter Password" id="password" value="admin1234">
+    <button onclick="login()">Login</button>
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-database-compat.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyB_PTQpHVII4WupL7JyfHajWo8DJaNFvew",
+            authDomain: "student-lms-data.firebaseapp.com",
+            databaseURL: "https://student-lms-data-default-rtdb.firebaseio.com",
+            projectId: "student-lms-data",
+            storageBucket: "student-lms-data.firebasestorage.app",
+            messagingSenderId: "925334665752",
+            appId: "1:925334665752:web:92d7c3d109d711fc7fe16d"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

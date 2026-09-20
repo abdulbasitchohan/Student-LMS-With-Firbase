@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="email" placeholder="Enter Email Address" id="email">
+    <input type="text" placeholder="Enter Password " id="password">
+    <button id="login">login</button>
+    <a href="./signup.html">don't have an account ? </a>
+
+
+    <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-database-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+         
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="login.js"></script>
+
+</body>
+
+</html>
